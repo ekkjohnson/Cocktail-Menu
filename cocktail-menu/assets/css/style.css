@@ -1,0 +1,249 @@
+/* body background */
+.body-background {
+  text-align: center;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+}
+
+header {
+  margin-bottom: 0px !important;
+  height: 20vh;
+  background-color: rgb(0, 138, 138);
+  align-items: center;
+
+}
+
+.form-page {
+  background-color: blanchedalmond;
+  height: 100vh;
+}
+
+#notification {
+  background-color: rgb(0, 138, 138);
+  top: 300px;
+}
+
+.box {
+
+  background-color: salmon;
+}
+
+#BtnSubmit {
+  left: 100px;
+}
+
+/* menu */
+.menu {
+  margin: 30 vh;
+
+}
+
+/* search */
+#searchForm {
+  margin: 30 vh;
+}
+
+/* displays weather information */
+#weather {
+  border-radius: 25px;
+  background-color: salmon;
+  color: white;
+  height: 80%;
+  width: 40%;
+}
+
+#weatherDiv1 {
+  text-align: center;
+  font-size: 25px;
+  width: 45%;
+}
+
+#weatherDiv2 {
+  text-align: center;
+  font-size: 25px;
+  width: 45%;
+}
+
+/* displays welcome "username" */
+.welcome-message {
+  background-color: salmon;
+  color: white;
+  height: 80%;
+  width: 40%;
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* side bar where letters are */
+.sidebar {
+  background-color: blanchedalmond;
+  width: 15vw;
+  height: 100vh;
+
+}
+
+.search-by-letter {
+  background-color: blanchedalmond;
+  height: 100%;
+}
+
+
+.search-results {
+  background-color: rgb(222, 204, 177);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85vw;
+}
+
+/* buttons from a-z */
+.a-z-btn {
+  height: 40px;
+  width: 40%;
+  margin: 2%;
+  border-radius: 12px;
+  background-color: darkcyan;
+  border: none;
+  color: salmon;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* 
+modal formatting to display drink cards
+*/
+
+.modal {
+  display: block;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal img {
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.modal-shell {
+  color: white;
+  display: block;
+  background-color: rgb(0, 138, 138);
+  width: 30vw;
+  margin: 0 auto;
+  padding: 1%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.modal-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-left {
+  /* background-color: red; */
+  height: 40%;
+  width: 45%;
+  font-size: 1.3rem;
+}
+
+.modal-right {
+  /* background-color: red; */
+  height: 40%;
+  width: 45%;
+  font-size: 1.15rem;
+}
+
+/* card for suggested drink */
+.suggested-drink {
+  background-color: aqua;
+}
+
+/* displays the idvidual drinks and recipes */
+.drink-card {
+  color: darkcyan;
+  height: 180px;
+  width: 100px;
+  border: 1px solid darkcyan;
+  margin: 1%;
+  background-color: lightsalmon;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* for the drink card image of the drink */
+.drink-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px 25px 0 0;
+}
+
+/* displays the text of the drink card */
+.drink-card p {
+  font-size: .85rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* hover over the close button */
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  div.welcome-message {
+    display: none;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

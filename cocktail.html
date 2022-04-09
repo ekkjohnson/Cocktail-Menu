@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/mystyles.scss" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title class="title">Cocktail Menu</title>
+</head>
+
+<body>
+
+  <header class="container-nav is-flex is-justify-content-space-around ">
+    <!-- space for the header and the nav bar-->
+    <div class=" welcome-message is-flex is-justify-content-center" id="welcome-message"></div>
+    <div class=" weather is-flex is-justify-content-center" id="weather"></div>
+  </header>
+  </div>
+  <!-- main content of the page all held within the main tag-->
+  <main>
+    <!--div for the side bar and all the elements within-->
+    <div class="container">
+      <div class="sidebar column">
+        <!--space for the letter links that let you search by first letter-->
+        <div class="search-by-letter" id="search-by-letter"></div>
+      </div>
+    </div>
+
+    <!-- area for the search results, content coming from the js-->
+    <div class="search-results" id="search-results"></div>
+  </main>
+
+
+  <div id="modal-holder"></div>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/alphabet.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/weatherscript.js"></script>
+</body>
+
+</html>
